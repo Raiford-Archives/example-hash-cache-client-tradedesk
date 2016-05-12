@@ -1,0 +1,36 @@
+Hi Raiford,
+
+ 
+
+Thank you for your submission. Before I review your solution any further I would like you to address the following issues I have noticed during my first pass:
+
+ 
+
+-        You have chosen key-independent associativity which requires to specify a set key. This is not exactly what the coding exercise asks. The associativity is intended to be inferred from the key of the key/value pair without introducing any explicit, user-supplied set keys.
+
+ 
+
+-        The design asks for pluggable eviction policies. You have chosen a subclass approach, which is not the most effective or straightforward way to implement modular eviction policies and in many cases limits the type of evictions that can be implemented due to tight coupling to the internal storage semantics of the cache, or adds extra complexity to have to navigate it. I’d like you to think of a design which decouples the cache from eviction policy specifics as much as possible. 
+
+ 
+
+-        I saw that you only provided implementation for the LRU eviction, however the exercise asks for both MRU and LRU. I would like to see both implemented. (I might be mistaken as I did not dig into the LRU cache implementation to see if it has both).
+
+ 
+
+Thank you!
+
+ 
+
+--
+
+Art Yegorov  Senior Software Engineer
+
+art.yegorov@thetradedesk.com
+
+Mobile: 408-338-9173
+
+@TheTradeDeskInc // Facebook // LinkedIn // TheTradeDesk.com
+
+ 
+
